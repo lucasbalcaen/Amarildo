@@ -1,0 +1,305 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  overflow: auto;
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400; }
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  z-index: 500; }
+  .header h1 {
+    font-weight: 700;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 0; }
+  .header p {
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0;
+    text-align: center; }
+
+.welcomeWrapper {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../img/bramhimself-min.JPG);
+  background-attachment: fixed; }
+  .welcomeWrapper .logoDiv {
+    width: 100%;
+    position: fixed;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .welcomeWrapper .logoDiv .bramLogo {
+      width: 220px;
+      margin: 0 auto; }
+  .welcomeWrapper .scrollDiv {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%; }
+    .welcomeWrapper .scrollDiv .arrowIcon {
+      margin: 0 auto;
+      color: white;
+      position: fixed; }
+    .welcomeWrapper .scrollDiv .arrowIcon.hovering {
+      -webkit-animation-name: hovering;
+      -webkit-animation-duration: 1.5s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-name: hovering;
+      -moz-animation-duration: 1.5s;
+      -moz-animation-timing-function: linear;
+      -moz-animation-iteration-count: infinite;
+      -o-animation-name: hovering;
+      -o-animation-duration: 1.5s;
+      -o-animation-timing-function: linear;
+      -o-animation-iteration-count: infinite;
+      -ms-animation-name: hovering;
+      -ms-animation-duration: 1.5s;
+      -ms-animation-timing-function: linear;
+      -ms-animation-iteration-count: infinite;
+      animation-name: hovering;
+      animation-duration: 1.5s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite; }
+      .welcomeWrapper .scrollDiv .arrowIcon.hovering:hover {
+        cursor: pointer; }
+
+@-webkit-keyframes hovering {
+  0%, 100% {
+    bottom: 6%; }
+  50% {
+    bottom: 3%; } }
+
+@-moz-keyframes hovering {
+  0%, 100% {
+    bottom: 6%; }
+  50% {
+    bottom: 3%; } }
+
+@-o-keyframes hovering {
+  0%, 100% {
+    bottom: 6%; }
+  50% {
+    bottom: 3%; } }
+
+@-ms-keyframes hovering {
+  .welcomeWrapper .scrollDiv 0%, .welcomeWrapper .scrollDiv 100% {
+    bottom: 6%; }
+  .welcomeWrapper .scrollDiv 50% {
+    bottom: 3%; } }
+
+@keyframes hovering {
+  0%, 100% {
+    bottom: 6%; }
+  50% {
+    bottom: 3%; } }
+
+.whoAmI {
+  width: 100%;
+  position: relative;
+  height: 150px;
+  z-index: 400;
+  background-color: #841b16;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .whoAmI .titleText {
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 7px;
+    text-transform: uppercase; }
+  .whoAmI .normalText {
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin: 0; }
+
+.tileWrapper {
+  width: 100%;
+  z-index: 400;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: relative; }
+  .tileWrapper .imgTile1 {
+    width: calc(100% /3);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../img/buiten-min.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media screen and (max-width: 1200px) {
+      .tileWrapper .imgTile1 {
+        width: 100%; } }
+    .tileWrapper .imgTile1 p {
+      font-weight: 700;
+      color: white;
+      font-size: 16px;
+      text-shadow: 2px 2px 4px #333;
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: center; }
+  .tileWrapper .imgTile2 {
+    width: calc(100% /3);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../img/bureau3.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media screen and (max-width: 1200px) {
+      .tileWrapper .imgTile2 {
+        width: 100%; } }
+    .tileWrapper .imgTile2 p {
+      font-weight: 700;
+      color: white;
+      font-size: 16px;
+      text-shadow: 2px 2px 4px #333;
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: center; }
+  .tileWrapper .imgTile3 {
+    width: calc(100% /3);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../../img/bramburau3-min.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media screen and (max-width: 1200px) {
+      .tileWrapper .imgTile3 {
+        width: 100%; } }
+    .tileWrapper .imgTile3 p {
+      font-weight: 700;
+      color: white;
+      font-size: 16px;
+      text-shadow: 2px 2px 4px #333;
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: center; }
+      .tileWrapper .imgTile3 p a {
+        text-decoration: none;
+        color: white; }
+
+.achievementsWrapper {
+  width: 100%;
+  color: black;
+  display: flex;
+  position: relative;
+  z-index: 400; }
+  @media screen and (max-width: 750px) {
+    .achievementsWrapper {
+      flex-wrap: wrap; } }
+  .achievementsWrapper .achievement {
+    width: 50%;
+    background-color: white;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 400; }
+    .achievementsWrapper .achievement div {
+      display: flex; }
+    @media screen and (max-width: 750px) {
+      .achievementsWrapper .achievement {
+        width: 100%; } }
+    .achievementsWrapper .achievement img {
+      height: 60px;
+      margin: 0 auto;
+      margin-bottom: 10px; }
+    .achievementsWrapper .achievement p {
+      font-size: 14px;
+      padding-left: 50px;
+      padding-right: 50px;
+      text-align: center;
+      margin: 0; }
+      .achievementsWrapper .achievement p a {
+        text-decoration: none;
+        color: white; }
+    .achievementsWrapper .achievement.darker {
+      background-color: #841b16; }
+      .achievementsWrapper .achievement.darker p {
+        color: white; }
+        .achievementsWrapper .achievement.darker p a {
+          text-decoration: underline; }
+
+.contactWrapper {
+  position: relative;
+  z-index: 400; }
+  .contactWrapper .contactBram {
+    background-color: #4d4d4d;
+    height: 200px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center; }
+    .contactWrapper .contactBram h1 {
+      margin: 0;
+      font-weight: 400;
+      color: white;
+      font-size: 25px;
+      margin-bottom: 10px; }
+    .contactWrapper .contactBram p {
+      color: white;
+      margin: 0;
+      margin-bottom: 7px; }
+    .contactWrapper .contactBram .social {
+      display: block;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      margin: 0 auto; }
+      .contactWrapper .contactBram .social:hover {
+        background-color: #841b16; }
+  .contactWrapper .contactVM {
+    background-color: #333;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .contactWrapper .contactVM div {
+      display: flex; }
+    .contactWrapper .contactVM a {
+      margin: 0 auto;
+      text-decoration: none; }
+    .contactWrapper .contactVM img {
+      width: 250px;
+      height: 75px;
+      margin: 0 auto; }
